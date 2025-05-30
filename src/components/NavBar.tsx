@@ -2,16 +2,20 @@ import { Button } from "react-aria-components"
 import styled from "styled-components"
 
 const NavBar = () => {
-    return (
-        <StyledNavDiv>
-            <img src={'src/assets/logoipsum357.svg'} alt='Stronghold shield logo' height="25" width="25" />
-            <div>
-                <StyledLoginButton onPress={() => { console.log('Pressed login') }}>Login</StyledLoginButton>
-                <StyledSignupButton onPress={() => { console.log('Press sign up') }}>Sign up</StyledSignupButton>
-            </div>
-        </StyledNavDiv>
-    )
+  return (
+    <StyledNavDiv>
+      <StyledImage src={'src/assets/logoipsum357.svg'} alt='Stronghold shield logo' height="50" width="50" />
+      <div>
+        <StyledLoginButton onPress={() => { console.log('Pressed login') }}>Login</StyledLoginButton>
+        <StyledSignupButton onPress={() => { console.log('Press sign up') }}>Sign up</StyledSignupButton>
+      </div>
+    </StyledNavDiv>
+  )
 }
+
+const StyledImage = styled.img`
+  margin-left: 1rem;
+`
 
 const StyledNavDiv = styled.div`
   display: flex;
@@ -25,19 +29,20 @@ const StyledNavDiv = styled.div`
 const StyledLoginButton = styled(Button)`
   margin-right: 1rem;
   background: #FFFFFF;
-  border-radius: 15px;
+  border-radius: 20px;
   border-width: 1px;
-  width: 5rem;
-  height: 2rem;
+  width: 6rem;
+  height: 3rem;
 `
 
 const StyledSignupButton = styled(Button)`
   margin-right: 1rem;
-  background: #FFFFFF;
-  border-radius: 15px;
+  background: #483AA0;
+  color: white;
+  border-radius: 20px;
   border-width: 1px;
-  width: 5rem;
-  height: 2rem;
+  width: 6rem;
+  height: 3rem;
 `
 
 export default NavBar;

@@ -1,13 +1,13 @@
-import { Button } from "react-aria-components"
 import styled from "styled-components"
+import AccountButton from "./AccountButton"
 
 const NavBar = () => {
   return (
     <StyledNavDiv>
       <StyledImage src={'src/assets/logoipsum357.svg'} alt='Stronghold shield logo' height="50" width="50" />
       <div>
-        <StyledLoginButton onPress={() => { console.log('Pressed login') }}>Login</StyledLoginButton>
-        <StyledSignupButton onPress={() => { console.log('Press sign up') }}>Sign up</StyledSignupButton>
+        <AccountButton onClick={() => { console.log('Pressed login') }} buttonText={"Login"} />
+        <AccountButton backgroundColor={' #483AA0'} textColor={'#FFFFFF'} onClick={() => { console.log('Pressed signup') }} buttonText={'Signup'} />
       </div>
     </StyledNavDiv>
   )
@@ -25,24 +25,6 @@ const StyledNavDiv = styled.div`
   justify-content: space-between;
   background-color: #EAEFEF;
   align-items: center;
-`
-const StyledLoginButton = styled(Button)`
-  margin-right: 1rem;
-  background: #FFFFFF;
-  border-radius: 20px;
-  border-width: 1px;
-  width: 6rem;
-  height: 3rem;
-`
-
-const StyledSignupButton = styled(Button)`
-  margin-right: 1rem;
-  background: #483AA0;
-  color: white;
-  border-radius: 20px;
-  border-width: 1px;
-  width: 6rem;
-  height: 3rem;
 `
 
 export default NavBar;

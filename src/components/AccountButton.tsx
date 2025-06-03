@@ -5,7 +5,7 @@ import styled from "styled-components"
 interface AccountButtonProps {
     backgroundColor?: string;
     textColor?: string;
-    buttonText?: string;
+    buttonText: string;
     onClick: () => void;
 }
 

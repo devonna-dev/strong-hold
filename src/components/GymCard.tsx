@@ -33,8 +33,9 @@ const GymCard = ({ gymDatum }: { gymDatum: GymType }) => {
 }
 
 const StyledGymCardDiv = styled.div`
-    margin: 0 auto;
-    margin-top: 10px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     height: 300px;
     width: 50%;
     box-shadow: 0px 7px 14px 0px hsl(0deg 0% 0% / 0.47);

@@ -36,7 +36,7 @@ const StyledGymCardDiv = styled.div`
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    height: 300px;
+    height: 350px;
     width: 50%;
     box-shadow: 0px 7px 14px 0px hsl(0deg 0% 0% / 0.47);
     border-radius: 25px;
